@@ -1,0 +1,128 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700&display=swap" rel="stylesheet">');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">');
+
+$beige: #ead3b6;
+$rojo: #b22d1b;
+$rojo2: #d15032;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+}
+
+.resultado{
+        flex-basis: 70vh;
+        //background-color: green;
+        background-image: url("/imgs/estampillaPress3.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 1em 0em;
+        display: flex;
+        flex-direction: column;
+        padding:2em 4em;
+
+        &__personaje{
+            margin-top: 3em;
+            height: 80vh; //85%
+            position: relative;
+            //background-color: pink;
+            display: flex;
+            justify-content: center;
+        
+            
+        }
+    
+        &__nombre{
+           // margin-top: -0.5em;
+            flex-basis: 15vh;
+            //background-color: blue;
+            //background-image: url("/imgs/nombre.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 5vh; //3em
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        &__texto{
+            width: 100%;
+            height: 100%;
+            color: #af7143;
+            //background-color: black;
+            background-image: url("/imgs/nombre.gif");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+           
+        }
+
+        &__botones{
+            display: none;
+        }
+        
+}
+
+.personaje{
+    &__orejas{
+        width:50%;
+        position: static;
+        //background-color: red;
+    }
+
+    &__piel{
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 50;
+    }
+
+    &__cuerpo{
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 50;
+
+    }
+
+    &__ojos{
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 50;
+        
+    }
+
+    &__boca{
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 50;
+        
+    }
+
+    &__nariz{
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 50;
+        
+    }
+}

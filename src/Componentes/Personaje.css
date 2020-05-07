@@ -1,0 +1,131 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700&display=swap" rel="stylesheet">');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">');
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+}
+
+.resultado {
+  -ms-flex-preferred-size: 70vh;
+      flex-basis: 70vh;
+  background-image: url("/imgs/estampillaPress3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1em 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em 4em;
+}
+
+.resultado__personaje {
+  margin-top: 3em;
+  height: 80vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resultado__nombre {
+  -ms-flex-preferred-size: 15vh;
+      flex-basis: 15vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resultado__texto {
+  width: 100%;
+  height: 100%;
+  color: #af7143;
+  background-image: url("/imgs/nombre.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+.resultado__botones {
+  display: none;
+}
+
+.personaje__orejas {
+  width: 50%;
+  position: static;
+}
+
+.personaje__piel {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+
+.personaje__cuerpo {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+
+.personaje__ojos {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+
+.personaje__boca {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+
+.personaje__nariz {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+/*# sourceMappingURL=Personaje.css.map */

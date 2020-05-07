@@ -1,0 +1,261 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700&display=swap" rel="stylesheet">');
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+}
+
+.contenedorCol {
+  background-image: url("/imgs/inicio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  border: 1.3em solid #ead3b6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contenedorCol__arriba {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em 0em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+.contenedorCol__stamps {
+  width: 100%;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+.arriba__titulo {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 9vh;
+  color: #ead3b6;
+  text-shadow: 4px 3px black;
+  padding: 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.arriba__div {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 2em;
+}
+
+.arriba__boton {
+  background-color: #b22d1b;
+  color: #ead3b6;
+  border: 6px solid #ead3b6;
+  height: 12vh;
+  font-size: 6vh;
+  border-radius: 12px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+  width: 12vh;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  margin-left: 0.3em;
+}
+
+.arriba__boton:hover {
+  cursor: pointer;
+  background-color: #ead3b6;
+  color: #b22d1b;
+  border: 8px solid #b22d1b;
+}
+
+.stamp {
+  -ms-flex-preferred-size: 40vh;
+      flex-basis: 40vh;
+  background-image: url("/imgs/estampillaPress2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1em 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em 4em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.stamp:hover {
+  background-image: url("/imgs/estampillaHover2.gif");
+  cursor: pointer;
+}
+
+.stamp__personaje {
+  height: 30vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stamp__nombre {
+  -ms-flex-preferred-size: 6vh;
+      flex-basis: 6vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.3em;
+}
+
+.stamp__texto {
+  width: 100%;
+  height: 6vh;
+  color: #af7143;
+  background-image: url("/imgs/nombre.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+.stamp__botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.stamp__boton {
+  background-color: #b22d1b;
+  color: #ead3b6;
+  border: none;
+  height: 4vh;
+  font-size: 3vh;
+  border-radius: 5px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+  width: 10vh;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0.6;
+}
+
+.stamp__boton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.personajeStamp__orejas {
+  width: 50%;
+  position: static;
+}
+
+.personajeStamp__piel {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+
+.personajeStamp__cuerpo {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+
+.personajeStamp__ojos {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+
+.personajeStamp__boca {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+
+.personajeStamp__nariz {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+/*# sourceMappingURL=Coleccion.css.map */

@@ -1,0 +1,126 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700&display=swap" rel="stylesheet">');
+$beige: #ead3b6;
+$rojo: #b22d1b;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+}
+
+.contenedor{
+    background-image: url("/imgs/inicio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    border: 1.3em solid $beige;
+    display: flex;
+    
+
+
+    &__imagen{
+        flex-basis: 25%;
+        height: 100%;
+        //background-color: red;
+        background-image: url("/imgs/perso1.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &--2{
+            background-image: url("/imgs/perso2.gif");
+        }
+    }
+
+    &__contenido{
+        flex-basis: 50%;
+        height: 100%;
+       display: flex;
+       flex-direction: column;
+       z-index: 2;
+    //background-color: green;
+
+        
+    }
+    
+    
+}
+
+.contenido{
+
+    &__titulo{
+        flex-basis: 20%;
+        //background-color: red;
+    }
+
+
+    &__botones{
+        flex-basis: 80%;
+        //background-color: pink;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
+.titulo{
+
+    &__principal{
+        font-size: 10vh;
+        color: $beige;
+        text-shadow: 4px 3px black;
+        margin-top: 0.3em;
+        
+    }
+
+    &__subtitulo{
+        font-size: 12vh;
+        color: black;
+        text-shadow: 4px 3px $beige;
+        margin-top: -0.3em;
+        
+    }
+
+}
+
+.botones{
+ 
+        &__con{
+
+
+        background-color: $rojo;
+        color: $beige;
+        border: 8px solid $beige;
+        height: 16vh;
+        font-size: 7vh;
+        border-radius: 12px;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-weight: 700;
+        width: 50vh;
+        margin-bottom: 0.8em;
+        transition: all 0.4s;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $beige;
+            color: $rojo;
+            border: 8px solid $rojo;
+        }
+
+        }
+        
+    
+}

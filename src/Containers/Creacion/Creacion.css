@@ -1,0 +1,271 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700&display=swap" rel="stylesheet">');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">');
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+}
+
+.contenedorCrea {
+  background-color: #d15032;
+  width: 100%;
+  height: 100vh;
+  border: 1.3em solid #ead3b6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedorCrea__opciones {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+}
+
+.opciones__botones {
+  -ms-flex-preferred-size: 17vh;
+      flex-basis: 17vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opciones__input {
+  -ms-flex-preferred-size: 26vh;
+      flex-basis: 26vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1em;
+  padding-left: 4em;
+  margin-top: 1em;
+}
+
+.opciones__guardar {
+  -ms-flex-preferred-size: 18vh;
+      flex-basis: 18vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+}
+
+.botones__cont {
+  width: 14vh;
+  height: 14vh;
+  font-size: 10vh;
+  background-color: #d15032;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+  color: #ead3b6;
+  border: 6px solid #ead3b6;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.botones__cont:hover {
+  cursor: pointer;
+  background-color: #b22d1b;
+  outline: none;
+}
+
+.botones__cont--active {
+  width: 14vh;
+  height: 14vh;
+  font-size: 10vh;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+  color: #ead3b6;
+  border: 6px solid #ead3b6;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #b22d1b;
+  outline: none;
+}
+
+.input__titulo {
+  width: 40vh;
+  height: 8vh;
+  background-image: url("/imgs/opcion.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 5vh;
+  margin-bottom: 0.7em;
+}
+
+.input__texto {
+  width: 50vh;
+  height: 8vh;
+  font-size: 5vh;
+  background-color: #d15032;
+  border: 6px solid #ead3b6;
+  color: #ead3b6;
+  padding: 0.2em;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-transform: uppercase;
+}
+
+.input__texto:focus {
+  outline: none;
+}
+
+.input__color {
+  width: 50vh;
+  height: 8vh;
+  font-size: 5vh;
+  border: 6px solid #ead3b6;
+  background-color: #ead3b6;
+}
+
+.input__seleccion {
+  font-size: 5vh;
+  width: 67vh;
+  height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input__range {
+  font-size: 4vh;
+  width: 13em;
+  height: 2em;
+}
+
+.guardar__boton {
+  background-color: #b22d1b;
+  color: #ead3b6;
+  border: 5px solid #ead3b6;
+  height: 12vh;
+  font-size: 6vh;
+  border-radius: 12px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+  width: 4em;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.guardar__boton:hover {
+  cursor: pointer;
+  background-color: #ead3b6;
+  color: #b22d1b;
+  border: 5px solid #b22d1b;
+}
+
+.seleccion {
+  width: 2em;
+  height: 2em;
+  border: 5px solid #ead3b6;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.seleccion:hover {
+  background-color: #b22d1b;
+  cursor: pointer;
+}
+
+.seleccion--active {
+  background-color: #b22d1b;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 60vh;
+  /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 50%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.2em;
+  width: 1.2em;
+  border-radius: 50%;
+  background: #b22d1b;
+  cursor: pointer;
+  margin-top: -14px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.4em;
+  cursor: pointer;
+  background: #ead3b6;
+  border-radius: 1.3px;
+}
+/*# sourceMappingURL=Creacion.css.map */
